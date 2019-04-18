@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_beranda"
+        android:icon="@drawable/ic_beranda"
+        android:title="@string/title_beranda" />
+
+    <item
+        android:id="@+id/navigation_team"
+        android:icon="@drawable/ic_team"
+        android:title="@string/title_team" />
+
+    <item
+        android:id="@+id/navigation_rekap"
+        android:icon="@drawable/ic_rekap"
+        android:title="@string/title_rekap" />
+
+</menu>

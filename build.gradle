@@ -1,0 +1,64 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.objectboxVersion = '2.3.1'
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath "io.objectbox:objectbox-gradle-plugin:$objectboxVersion"
+        
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+ext{
+    supportVersion = '28.0.0'
+
+    //Essentials
+    essentialsVersion = '3.0.0-RC1'
+
+    //Pattern Lock View
+    patternLockViewVersion = '1.0.0'
+    //Zxing Android
+    zxingAndroidVersion = '3.5.0'
+
+    //Timber
+    timberVersion = '4.7.1'
+
+    //ButterKnife
+    butterknifeVersion = '9.0.0-rc1'
+
+    //Merlin
+    merlinVersion = '1.2.1'
+    //Retrofit
+    retrofitVersion = '2.5.0'
+    //Retrofit Moshi Converter
+    retrofitMoshiVersion = '2.5.0'
+
+    //Circle ImageView
+    circleImageViewVersion = '2.1.0'
+
+    //JustifyText
+    justifyTextVersion = '1.1'
+
+    //AppIntro Version
+    AppIntro = 'v4.2.3'
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
